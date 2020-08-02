@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  /* color: #333; */
+}
+
+body {
+  background-color: #f7f7f9;
+  /* background-image: url(http://static.frontendmasters.com/resources/2019-05-02-complete-intro-react-v5/image-background.png); */
+  margin: 0;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-params {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .search-params form {
+  background-color: #d9c148;
+  width: 360px;
+  margin: 0px 25px 0px 0px;
+  padding: 35px 15px 15px 15px;
+  border-radius: 5px;
+  float: left;
+} */
+
+.Form {
+  display: flex;
+  border: 1px solid #e8e8ed;
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 1px 1px #e8e8ed;
+  padding: 0 40px;
+}
+
+.search-params label {
+  width: 60px;
+}
+
+.search-params input,
+.search-params select {
+  font-size: 16px;
+  height: 45px;
+  width: 15%;
+  margin: 15px 15px 30px 10px;
+  border: none;
+  padding: 0 10px;
+  box-shadow: 0px 1px 1px 0px #e8e8ed;
+  border-radius: 4px;
+}
+
+.search-params button,
+#modal button,
+.details button {
+  background-color: #ee6352;
+  padding: 5px 25px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.formButton {
+  background-color: #ee6352;
+  height: 45px;
+}
+
+.search-params button:hover {
+  background-color: #122622;
+}
+
+.search-params button:active {
+  background-color: #5f1d22;
+}
+
+.search-params button:focus {
+  border: 1px solid cornflowerblue;
+}
+
+.search {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 15px;
+  border-radius: 9px;
+  /* float: left; */
+  /* margin-bottom: 25px; */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.pet {
+  width: 100%;
+  margin: 25px 0;
+  background: #ffffff;
+  border-radius: 10px;
+  height: 370px;
+  text-decoration: none;
+}
+
+.pet img {
+  width: 100px;
+  min-height: 100px;
+}
+
+.info {
+  color: #131110;
+  padding: 16px 24px 24px 24px;
+  /* margin: 10px 5px; */
+}
+
+.pet h1 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #131110;
+  width: 95%;
+  overflow: hidden;
+  margin: 0;
+  text-overflow: ellipsis;
+}
+
+.pet h2 {
+  /* white-space: nowrap; */
+  font-weight: normal;
+  font-size: 15px;
+  /* margin: 0; */
+  opacity: 0.7;
+  text-overflow: ellipsis;
+}
+.pet_category {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  margin: 10px 0;
+}
+.image-container {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 235px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* header > a,
+#root > div > h1 {
+  display: inline-block;
+  background-image: url(http://static.frontendmasters.com/resources/2019-05-02-complete-intro-react-v5/image-logo.png);
+  width: 279px;
+  height: 76px;
+  overflow: hidden;
+  text-indent: -9999px;
+} */
+
+/* header a {
+  color: #bf3334;
+  font-size: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 10px;
+} */
+
+header.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #ee6352;
+  color: #f7f7f9;
+}
+header > a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0 10px;
+}
+.NavBarItem {
+  list-style-type: none;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.Title {
+  font-size: 20px;
+  color: #f7f7f9;
+  letter-spacing: 1px;
+}
+
+.details {
+  font-family: "Roboto";
+  width: 1100px;
+  margin: 0 auto;
+  /* background-color: #d9c148; */
+  padding: 15px;
+  border: 2px solid #e8e8ed;
+  border-radius: 9px;
+  margin-bottom: 25px;
+  box-shadow: 5px 5px #e8e8ed;
+}
+
+.detailsInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details p {
+  line-height: 1.5;
+  padding: 0px 15px;
+}
+
+.details h1 {
+  text-align: center;
+  color: #ee6352;
+  font-size: 60px;
+  margin: 5px 0px;
+}
+
+.details h2 {
+  text-align: center;
+  margin: 5px 0px 20px 0px;
+}
+
+button.detailsButton {
+  height: 60px;
+  width: 200px;
+  font-size: 16px;
+}
+button.detailsButton:hover {
+  background-color: #eb4833;
+}
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 400px; */
+  margin-top: 8px;
+}
+
+.carousel > img {
+  max-width: 45%;
+  max-height: 600px;
+}
+
+.carousel-smaller {
+  /* width: 50%; */
+  margin: 15px 0;
+}
+
+.carousel-smaller > img {
+  width: 100px;
+  height: 100px;
+  /* border-radius: 20px; */
+  display: inline-block;
+  /* margin: 15px; */
+  cursor: pointer;
+  /* border: 2px solid #333; */
+  opacity: 0.7;
+}
+
+.carousel-smaller > img.active {
+  /* border-color: #ad343e; */
+  opacity: 1;
+  height: 110px;
+  width: 110px;
+  transform: translateY(5px);
+  box-shadow: 1px 0px 4px 1px black, -1px 0px 4px 1px black;
+}
+
+#modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal:empty {
+  display: none;
+}
+
+#modal > div {
+  background-color: white;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  height: 200px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#modal .buttons button {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#modal .buttons button:hover {
+  background-color: #eb4833;
+}
+
+@media only screen and (max-width: 1129px) {
+  header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .search-params {
+    width: 95%;
+  }
+
+  .Form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-params form {
+    width: 100%;
+    margin: 15px;
+  }
+  .search-params label {
+    padding: 10px 15px 0 5px;
+  }
+  .search-params input,
+  .search-params select {
+    display: block;
+    margin: 15px;
+    width: 100%;
+  }
+  .details {
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 9px;
+    margin-bottom: 25px;
+  }
+
+  .info {
+    width: 65%;
+  }
+
+  .info h1 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .info h2 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  .search-params {
+    width: 95%;
+  }
+  .Form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-params form {
+    width: 100%;
+    margin: 15px;
+  }
+  .search-params label {
+    padding: 10px 15px 0 5px;
+  }
+  .search-params input,
+  .search-params select {
+    display: block;
+    margin: 15px;
+    width: 100%;
+  }
+  .search {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-container {
+    margin: 0 auto;
+    float: none;
+  }
+  .carousel-smaller > img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Loader */
+@keyframes ldio-c4gnd68xam {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.ldio-c4gnd68xam div {
+  animation: ldio-c4gnd68xam 1.1s linear infinite;
+  width: 117.6px;
+  height: 117.6px;
+  top: 14.7px;
+  left: 14.7px;
+  border-radius: 50%;
+  box-shadow: 0 4.1160000000000005px 0 0 #e15b64;
+}
+.loadingio-spinner-eclipse-wt7ne2nbazj {
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  background: none;
+}
+.ldio-c4gnd68xam {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-c4gnd68xam div {
+  box-sizing: content-box;
+}
+/* generated by https://loading.io/ */
